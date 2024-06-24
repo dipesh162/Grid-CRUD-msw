@@ -1,6 +1,8 @@
-import React, { useRef, useState, useEffect } from 'react';
+// React
+import React, { useRef, useEffect } from 'react';
 import { RxCross2 } from 'react-icons/rx';
-// import Image from './Image'; // Adjust path based on your project structure
+
+// Styles
 import '../Overlay.css';
 
 function Overlay({ isOverlayOpen, setOverlayOpen , children}) {

@@ -7,7 +7,7 @@ import '../AddButton.css';
 // Helpers
 import { fetchPatch, fetchPost } from '../helpers/apiHelper';
 
-function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg, position, handleEditItem }) {
+function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg, position }) {
     const [selectedFile, setSelectedFile] = useState(null);
     const [previewSrc, setPreviewSrc] = useState('');
     const [title, setTitle] = useState(filledTitle ?? '');

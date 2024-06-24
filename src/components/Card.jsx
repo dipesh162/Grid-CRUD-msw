@@ -5,13 +5,13 @@ import { MdDelete } from "react-icons/md";
 
 // Components
 import CardImage from './CardImage';
+import ContentForm from './ContentForm';
+import Overlay from './Overlay';
 
 // Styles
 import '../Card.css'
-import Overlay from './Overlay';
-import ContentForm from './ContentForm';
 
-const Card = ({ card, index, moveCard, handleEditItem, handleDeleteItem, handleDataUpdate }) => {
+const Card = ({ card, index, moveCard, handleDeleteItem, handleDataUpdate }) => {
 
   const [isOverlayOpen, setOverlayOpen] = useState(false)
 
@@ -46,7 +46,6 @@ const Card = ({ card, index, moveCard, handleEditItem, handleDeleteItem, handleD
                   filledTitle={card.title} 
                   filledImg={card.src} 
                   position={card.position} 
-                  handleEditItem={handleEditItem}
                 />
             </Overlay>
         }

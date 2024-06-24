@@ -105,15 +105,6 @@ const CardList = () => {
     setUpdated(prev=> !prev)
   };
 
-  const handleEditItem = (card)=>{
-    console.log(card)
-    // fetchPatch('/api/data/',card.position,card)
-    //   .then((res)=>{
-    //     console.log(res)
-    //     handleDataUpdate(res)
-    //   })
-  }
-
   const handleDeleteItem = (card)=>{
       fetchDelete(`/api/data/${card.position}`)
       .then((res)=>{
@@ -142,7 +133,6 @@ const CardList = () => {
             card={card}
             moveCard={moveCard}
             handleDeleteItem={handleDeleteItem}
-            handleEditItem={handleEditItem}
             handleDataUpdate={handleDataUpdate}
           />
         ))}

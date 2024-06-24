@@ -1,6 +1,5 @@
 // React
-import React, { useEffect, useRef, useState } from 'react'
-import { RxCross2 } from "react-icons/rx";
+import React, { useState } from 'react'
 
 // Components
 import Overlay from './Overlay';
