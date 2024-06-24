@@ -25,7 +25,7 @@ function AddContent({handleDataUpdate}) {
             }
             
             <div className='add-content' onClick={handleClick}>
-                Add more
+                + Add more
             </div>
         </>
     )

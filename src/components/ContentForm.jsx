@@ -99,7 +99,7 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
     return (
         <div className='overlay-form'>
             <div>
-                <label htmlFor="title">Title:</label>
+                <label htmlFor="title">Title: </label>
                 <input
                     type="text"
                     id="title"
@@ -108,8 +108,8 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 />
             </div>
 
-            <div>
-                <label htmlFor="image">Image:</label>
+            <div style={{marginLeft: '62px'}}>
+                <label htmlFor="image">Image: </label>
                 <input type="file" id="image" onChange={handleFileChange} />
             </div>
 
@@ -120,7 +120,7 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 </div>
             )}
 
-            <button onClick={handleSubmit}>{filledTitle ? 'Update' : 'Add'} Item</button>
+            <button onClick={handleSubmit} className='add-item'>{filledTitle ? 'Update' : 'Add'} Item</button>
         </div>
     );
 }
