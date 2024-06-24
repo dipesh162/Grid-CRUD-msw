@@ -1,0 +1,16 @@
+#root {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.card-list{
+  max-width: 1120px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
