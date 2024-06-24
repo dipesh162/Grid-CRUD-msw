@@ -1,4 +1,6 @@
-# Project Title: Document Management Application
+# Document Management Application
+
+Live Link: https://master--grid-crud-msw.netlify.app/
 
 ## Introduction
 
@@ -50,9 +52,8 @@ This is a simple full-stack application using React, mock service workers, and l
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-repo/document-management-app.git
-    cd document-management-app
-    ```
+    git clone https://github.com/dipesh162/Grid-CRUD-msw.git
+ 
 
 2. Install dependencies:
     ```sh
@@ -63,21 +64,14 @@ This is a simple full-stack application using React, mock service workers, and l
 
 ### Running the Project
 
-1. Start the mock service worker:
-    ```sh
-    npm run start:msw
-    # or
-    yarn start:msw
-    ```
-
-2. Start the development server:
+1. Start the development server:
     ```sh
     npm run dev
     # or
     yarn dev
     ```
 
-3. Open your browser and navigate to `http://localhost:3000` to view the application.
+2. Open your browser and navigate to `http://localhost:5173` to view the application.
 
 ### Project Structure
 
@@ -93,9 +87,8 @@ This is a simple full-stack application using React, mock service workers, and l
 
 - **React**: Frontend framework.
 - **msw**: Mock Service Worker for simulating API calls.
-- **react-dnd**: For drag-and-drop functionality.
 - **react-icons**: For icons.
-- **axios**: For making API requests.
+- **netlify-cli**: For deployment.
 
 ## Conclusion
 
