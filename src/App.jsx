@@ -33,6 +33,7 @@ const CardList = () => {
   },[])
   
 
+  // Update data on adding, editing of data
   const handleDataUpdate = (data)=>{
     setCards(data)
     setCardMoved(true)

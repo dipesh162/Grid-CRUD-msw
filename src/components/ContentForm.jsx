@@ -44,6 +44,14 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
         reader.readAsDataURL(file);
     };
 
+    // Reset form fields
+    const handleResetFormFields = ()=>{
+        setTitle('');
+        setSelectedFile(null);
+        setPreviewSrc('');
+        setOverlayOpen(false);
+    }
+
     const handleSubmit = () => {
         if (!selectedFile) return;
 
@@ -66,11 +74,7 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 fetchPatch(`/api/data/${position}`,newItem)
                     .then((res)=>{
                         handleDataUpdate(res)
-                        // Reset form fields
-                        setTitle('');
-                        setSelectedFile(null);
-                        setPreviewSrc('');
-                        setOverlayOpen(false);
+                        handleResetFormFields()
                     })
             } else {
 
@@ -80,11 +84,7 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 fetchPost('/api/data', updatedData)
                     .then(() => {
                         handleDataUpdate(updatedData);
-                        // Reset form fields
-                        setTitle('');
-                        setSelectedFile(null);
-                        setPreviewSrc('');
-                        setOverlayOpen(false);
+                        handleResetFormFields()
                     })
                     .catch((error) => {
                         console.error('Error adding item:', error);
