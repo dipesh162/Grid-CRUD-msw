@@ -65,7 +65,6 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 // Call API to save data
                 fetchPatch(`/api/data/${position}`,newItem)
                     .then((res)=>{
-                        console.log(res)
                         handleDataUpdate(res)
                         // Reset form fields
                         setTitle('');
@@ -80,7 +79,6 @@ function ContentForm({ setOverlayOpen, handleDataUpdate, filledTitle, filledImg,
                 // Call API to save data
                 fetchPost('/api/data', updatedData)
                     .then(() => {
-                        console.log('Item added successfully');
                         handleDataUpdate(updatedData);
                         // Reset form fields
                         setTitle('');

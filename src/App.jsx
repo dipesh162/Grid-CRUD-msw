@@ -108,7 +108,6 @@ const CardList = () => {
   const handleDeleteItem = (card)=>{
       fetchDelete(`/api/data/${card.position}`)
       .then((res)=>{
-        console.log(res)
         handleDataUpdate(res)
       })
   }

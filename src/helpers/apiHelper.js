@@ -34,7 +34,6 @@ const fetchPost = async (url, data) => {
 // PATCH request helpers 
 const fetchPatch = async (url,data) => {
     try {
-        console.log(37,data)
         const response = await fetch(url, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },

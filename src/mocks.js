@@ -22,7 +22,6 @@ const updateData = (id, dataToUpdate)=>{
   const localData = localStorage.getItem('data')
   const items = JSON.parse(localData)
   const newData = items.map((data)=> data.position == id ? {...dataToUpdate} : data)
-  console.log(25, newData)
   setData(newData)
   return newData
 }
@@ -59,11 +58,8 @@ const handlers = [
   // Update data
   http.patch('/api/data/:id', async ({ params, request }) => {
     const { id } = params;
-    console.log(id)
     const dataToUpdate = await request.json()
-    console.log(dataToUpdate)
     const data = updateData(id, dataToUpdate)
-    console.log(data)
     return HttpResponse.json(data)
   }),
 
