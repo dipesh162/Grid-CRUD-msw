@@ -9,7 +9,7 @@ import AddContent from './components/AddContent';
 import './App.css'
 
 // Helpers
-import { fetchDelete, fetchGet, fetchPatch, fetchPost } from './helpers/apiHelper';
+import { fetchDelete, fetchGet, fetchPost } from './helpers/apiHelper';
 
 
 const CardList = () => {

@@ -1,5 +1,5 @@
 // React
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useState } from 'react'
 
 // Components
 import Overlay from './Overlay';
@@ -26,6 +26,7 @@ function CardImage({card}) {
   )
 }
 
+// Image Component
 const Image = ({card,handleImgClick, height, width})=>{
     const [loading, setLoading] = useState(true);
     const handleImageLoad = () => {

@@ -7,6 +7,8 @@ import catsArr from '../static/cats'
 
 
 // Utility functions to interact with localStorage
+
+// Fetch data handler
 const getData = () => {
   const localData = localStorage.getItem('data')?.length>0 ? localStorage.getItem('data') : null
   const data = localData ? JSON.parse(localData) : catsArr;
@@ -14,10 +16,12 @@ const getData = () => {
   return data 
 };
 
+// Set data handler
 const setData = (data) => {
   localStorage.setItem('data', JSON.stringify(data));
 };
 
+// Update data handler
 const updateData = (id, dataToUpdate)=>{
   const localData = localStorage.getItem('data')
   const items = JSON.parse(localData)
@@ -26,6 +30,7 @@ const updateData = (id, dataToUpdate)=>{
   return newData
 }
 
+// Delete data handler
 const deleteData = (id)=>{
   const localData = localStorage.getItem('data')
   const items = JSON.parse(localData)

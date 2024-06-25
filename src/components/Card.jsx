@@ -15,10 +15,12 @@ const Card = ({ card, index, moveCard, handleDeleteItem, handleDataUpdate }) => 
 
   const [isOverlayOpen, setOverlayOpen] = useState(false)
 
+  // As soon as drag starts, trasnfer the data and set it as plain/text
   const handleDragStart = (e) => {
     e.dataTransfer.setData('text/plain', index);
   };
 
+  // When drag is dropped, cetch the transfered data
   const handleDrop = (e) => {
     const draggedIndex = e.dataTransfer.getData('text');
     moveCard(draggedIndex, index);

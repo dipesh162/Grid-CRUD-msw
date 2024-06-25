@@ -8,6 +8,8 @@ import '../Overlay.css';
 function Overlay({ isOverlayOpen, setOverlayOpen , children}) {
 
   const overlayRef = useRef()
+
+  // Focus on overlay if it is opened
   useEffect(() => {
     if (isOverlayOpen && overlayRef.current) {
       overlayRef.current.focus();

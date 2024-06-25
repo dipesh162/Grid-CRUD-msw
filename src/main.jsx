@@ -1,8 +1,10 @@
+// React
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+
+// Styles
 import './index.css'
-// import { worker } from './mocks.js';
 
 async function enableMocking() {
  
